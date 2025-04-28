@@ -1,0 +1,127 @@
+/* Fondo de página */
+h1.title.is-2.has-text-success {
+    color: #006d3f !important;  /* Verde similar al del footer */
+}
+
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+/* Título principal */
+.has-text-success {
+    color: #2d6a4f !important;
+}
+
+/* Sección principal */
+.section {
+    padding: 40px 0;
+}
+
+/* Contenedor central */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Diseño de tarjetas */
+.box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Sutil efecto al pasar el ratón */
+}
+
+/* Títulos secundarios */
+.title.is-4 {
+    color: #006d3f;
+}
+
+/* Estilo de botones */
+button.is-link, a.button.is-link {
+    background-color: #e65c00 !important; /* Naranja */
+    color: white !important;             /* Texto blanco */
+    border-radius: 5px !important;
+    margin-top: 10px !important;
+    font-size: 0.8rem !important;        /* Tamaño de fuente más pequeño */
+    padding: 5px 10px !important;       /* Menor padding para hacer el botón más chico */
+    line-height: 1.2 !important;         /* Ajusta la altura de la línea */
+}
+
+button.is-link:hover, a.button.is-link:hover {
+    background-color: #FF7F00 !important; /* Naranja oscuro para el hover */
+}
+
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #2d6a4f;
+    color: white;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Espaciado entre las tarjetas */
+.columns .column {
+    margin-bottom: 20px;
+}
+
+/* Ajuste en pantallas pequeñas */
+@media (max-width: 768px) {
+    .columns {
+        display: block;
+    }
+}
+
+/* Estilo para modo oscuro */
+body.modo-oscuro {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.modo-oscuro .box {
+    background-color: #1e1e1e;
+}
+
+body.modo-oscuro .title.is-2,
+body.modo-oscuro .title.is-4,
+body.modo-oscuro h1, 
+body.modo-oscuro h2 {
+    color: #00c46b; /* Verde más brillante en oscuro */
+}
+
+body.modo-oscuro footer {
+    background-color: #1e1e1e;
+}
+
+body.modo-oscuro a.button.is-link {
+    background-color: #ff9500 !important;
+}
+
+/* Botón de cambio de modo */
+header #modo-toggle {
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #006d3f;
+    cursor: pointer;
+}
+
+header #modo-toggle:hover {
+    color: #e65c00;
+}
+
+body.modo-oscuro .subtitle.is-5,
+body.modo-oscuro .box p {
+    color: white;
+}

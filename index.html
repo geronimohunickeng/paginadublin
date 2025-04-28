@@ -11,6 +11,13 @@
 </head>
 <body>
 
+    <header style="display: flex; justify-content: flex-end; padding: 20px;">
+        <button id="modo-toggle" class="button is-link">
+          <span id="icono-modo">🌞</span>
+        </button>
+      </header>
+      
+
     <section class="section">
         <div class="container">
             <header class="has-text-centered mb-6">
@@ -84,6 +91,7 @@
                     </div>
                 </div>
 
+
             </div>
 
             <!-- Nueva sección de recuerdos -->
@@ -103,6 +111,22 @@
             </footer>
         </div>
     </section>
+
+    <script>
+        const toggleButton = document.getElementById('modo-toggle');
+        const iconoModo = document.getElementById('icono-modo');
+        const body = document.body;
+      
+        toggleButton.addEventListener('click', () => {
+          body.classList.toggle('modo-oscuro');
+          if (body.classList.contains('modo-oscuro')) {
+            iconoModo.textContent = '🌙'; // Modo oscuro → Luna
+          } else {
+            iconoModo.textContent = '🌞'; // Modo claro → Sol
+          }
+        });
+      </script>
+      
 
 </body>
 </html>
